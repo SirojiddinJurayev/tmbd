@@ -1,0 +1,192 @@
+.packpage_inners{
+    display: flex;
+}
+.navbar{
+    position: none;
+}
+.backpage{
+    padding-bottom: 30px;
+    padding-top: 5px;
+}
+.packpage_inners{
+    gap: 47px;
+    margin-left: 479px;
+    margin-top: 96px
+}
+.drop_btn{
+  background: white;
+  color: black;
+  border: none;
+  outline: none;
+}
+.film_table{
+    background: rgba(52.5, 31.5, 31.5, 1);
+    padding-top: 45px;
+    padding-bottom: 30px;
+}
+.info_icon{
+    background: darkblue;
+    padding: 13px 15px;
+    border-radius: 39px;
+    font-size: 12px;
+    color: white;
+
+}
+.info_iconmon{
+    margin-left: 20px;
+}
+.info_title{
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: white;
+    margin-top: 47px;
+}
+.info_text{
+    font-size: 1em;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 30px;
+}
+.progress_title{
+    font-weight: 700;
+    color: white;
+}
+.info_page-titile{
+    font-weight: 600;
+    font-size: 1.3em;
+    color: white;
+    margin-bottom: 10px;
+}
+.info_page-text{
+    color: white;
+
+}
+.info_page-name-1{
+    text-decoration: none;
+    color: white;
+}
+.info_page_desc{
+    color: white;
+    font-size: 0.9em;
+}
+.progress{
+    display: flex;
+    margin-bottom: 50px;
+}
+.info_silku{
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+}
+.film_table_item{
+    display: flex;
+}
+.film_table_info{
+    margin-left: 40px;
+}
+.info_page-name{
+    margin-top: 15px;
+    font-weight: 700;
+}
+.film_img_table{
+    border-radius: 10px;
+}
+
+
+
+/*  */
+.metoo{
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+.metoo_item-menu{
+    display: flex;
+    gap: 15px;
+}
+.card{
+    border: 1px solid rgb(223, 181, 181);
+    border-radius: 7px;
+}
+.card_img-name{
+    font-weight:600;
+    font-size: 17px;
+}
+.card_img_title{
+    margin-left: 10px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+/*  */
+.showbar{
+    width: 260px;
+    /* position: fixed; */
+    float: right;
+    margin-top: 103px;
+    margin-left: 55px;
+}
+.bottom{
+    background: rgb(158, 135, 135);
+    width: 245px;
+    height: 1px;
+}
+.showbar_title{
+    margin-top: 15px;
+}
+
+
+
+/*  */
+.top{
+    background: rgb(158, 135, 135);
+    width: 700px;
+    height: 7px;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-bottom: 27px;
+}
+.inner{
+    background: rgb(158, 135, 135);
+    width: 1000px;
+    height: 1px;
+    margin-top: 27px;
+    margin-bottom: 27px;
+}
+.card_one{
+    display: flex;
+    border: 1px solid rgb(158, 135, 135);
+    border-radius: 8px;
+    width: 800px;
+    height: 195px;
+    margin-bottom: 27px;
+    margin-top: 27px;
+
+}
+.card_one-page{
+    margin-left: 20px;
+    margin-top: 50px;
+}
+.card_one-desc{
+    margin-top: 27px;
+}
+.table__title{
+    border-top: 1px solid rgb(248, 237, 237);
+}
+.card_three{
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-left: 7px;
+    padding-right: 7px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid rgb(158, 135, 135);
+    width: 800px;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 10%);
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.metoo_item-menu{
+    overflow: auto;
+    margin-bottom: 19px;
+}

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="/css/loading-bar.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+  
+</head>
+<body>
+  <header>
+    
+      <div class="header_inners">
+        <div class="navbar">
+          <div class="container">
+          <ul>
+            <a href="index.html"><img src="https://www.themoviedb.org/assets/2/v4/logos/v2/blue_short-8e7b30f73a4020692ccca9c88bafe5dcb6f8a62a4c6bc55cd9ba82bb2cd95f6c.svg" alt="" width="154px"></a>
+            <li class="dropdown">
+              <a href="javascript:void(0)" class="dropbtn">Фильмы</a>
+              <div class="dropdown-content">
+                <a href="#" class="header_link">Популярные</a>
+                <a href="#" class="header_link">Смотрят сейчас</a>
+                <a href="#" class="header_link">Ожидаемые</a>
+                <a href="#" class="header_link">Лучшие</a>
+              </div>
+            </li>
+            <li class="dropdown">
+              <a href="javascript:void(0)" class="dropbtn">Сериалы</a>
+              <div class="dropdown-content">
+                <a href="#">Популярные</a>
+                <a href="#">В эфире сегодня</a>
+                <a href="#">По телевидению</a>
+                <a href="#">Лучшие</a>
+              </div>
+            </li>
+            <li class="dropdown">
+              <a href="javascript:void(0)" class="dropbtn">Люди</a>
+              <div class="dropdown-content">
+                <a href="#">Популярные люди</a>
+              </div>
+            </li>
+            <li class="dropdown">
+              <a href="javascript:void(0)" class="dropbtn">Ещё</a>
+              <div class="dropdown-content">
+                <a href="#">Обсуждения</a>
+                <a href="#">Доска почёта</a>
+                <a href="#">Поддержка</a>
+                <a href="#">API</a>
+              </div>
+            </li>
+          
+        </div>
+        
+        </div>
+        <div class="header_item">
+          <div class="container">
+            <div class="header_item-inners">
+              <div class="header_page">
+              <h1 class="header_item-title">Добро пожаловать.</h1>
+              <h3 class="header_item-text">Миллионы фильмов, сериалов и людей. Исследуйте сейчас.</h3>
+              </div>
+              <div class="wrap">
+                <div class="search">
+                   <input type="text" class="searchTerm" placeholder="What are you looking for?">
+                   <button type="submit" class="searchButton">
+                     <i class="fa fa-search">Search</i>
+                  </button>
+                </div>
+             </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </header>
+  <div class="content">
+    <div class="container">
+      <div class="content_inners">
+        <div class="tabs">
+          <div class="tabs__title">
+              <h3 class="content_h3">Что популярно</h3>
+              <h3 class="table__title active__tab" data-id="0">По ТВ</h3>
+              <h3 class="table__title" data-id="1">В кинотеатрах</h3>
+          </div>
+          <div class="tabs__items"> 
+              <div class="tab__inner active__content " data-id="0">
+                  <p class="tab__text">
+                    <div class="tab_content">
+                     <div class="row" id="movies">
+                       
+                     </div>
+                     
+                  
+                      
+                    </div>
+                  </p>
+              </div>
+              <div class="tab__inner" data-id="1">
+                  <p class="tab__text">
+                    <div class="film-2">
+                      <div class="right" id="movies_one">
+                        <div class="card">
+                          <div class="aplacation_two">
+                            <a href="">
+                              <img src="https://www.themoviedb.org/t/p/w220_and_h330_face/${movie.backdrop_path}" class="film_img-two" alt="" width="150px" height="250px">
+                            </a>
+                              <div class="more"><i class="bi bi-three-dots"></i></div>
+                              <div class="ldBar"></div>
+                              <h3 class="film_name-two">${movie.title}</h3>
+                              <p class="film_date-two">${movie.release_date}</p>
+                          </div>
+                      </div>
+                    </div>
+                    </div>
+                  </p>
+              </div>
+          </div>
+      </div>
+      </div>
+    </div>
+  </div>
+  <main>
+    <div class="container">
+      <div class="main_inners">
+        <div class="main_item">
+          <div class="tabs__title">
+            <h3 class="main_h3">Последние трейлеры</h3>
+            <h3 class="table__title active__tab" data-id="0">По ТВ</h3>
+            <h3 class="table__title" data-id="1">В кинотеатрах</h3>
+        </div>
+        <div class="tabs__items"> 
+            <div class="tab__inner active__content " data-id="0">
+                <p class="tab__text">
+                  <div class="tab_content">
+                   <div class="row" id="movies">
+                     <div class="card">
+                       <div class="card_item">
+                         <a href="#">
+                         <img src="https://www.themoviedb.org/t/p/w355_and_h200_multi_faces/4g5gK5eGWZg8swIZl6eX2AoJp8S.jpg" class="main_img"  alt="">
+                         </a>
+                         <div class="more"><i class="bi bi-three-dots"></i></div>
+                         <div class="ldBar"></div>
+                         <h3 class="film_name">vvvv</h3>
+                         <p class="film_date">vvv</p>
+                       </div>
+                     </div>
+                   </div>
+                   
+                
+                    
+                  </div>
+                </p>
+            </div>
+            <div class="tab__inner" data-id="1">
+                <p class="tab__text">
+                  <div class="film-2">
+                   
+                  </div>
+                </p>
+            </div>
+        </div>
+    </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  <!-- <div class="container">
+    <div class="row" id="movies">
+      <div class="col s12 m7">
+        <div class="card">
+          <div class="card-image">
+            <img src="images/sample-1.jpg">
+            <span class="card-title">Card Title</span>
+          </div>
+          <div class="card-content">
+            <p>I am a very simple card. I am good at containing small bits of information.
+            I am convenient because I require little markup to use effectively.</p>
+          </div>
+          <div class="card-action">
+            <a href="#">This is a link</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+  <footer>
+    <div class="container">
+      <div class="footer_inners">
+        <div class="footer_item">
+          <div class="footer_logo">
+            <a href="index.html"><img src="https://www.themoviedb.org/assets/2/v4/logos/v2/blue_square_2-d537fb228cf3ded904ef09b136fe3fec72548ebc1fea3fbbd1ad9e36364db38b.svg" width="130px" alt=""></a><br><br><br>
+            <a href="#"><button type="button" class="user_btn">Привет!</button></a>
+          </div>
+          <div class="footer_menu">
+            <h3 class="footer_title">Главное</h3>
+            <ul>
+            <li><a href="footer_menu-link">О TMDB</a></li>
+            <li><a href="footer_menu-link">Связаться с нами</a></li>
+            <li><a href="footer_menu-link">Форумы поддержки</a></li>
+            <li><a href="footer_menu-link">API</a></li>
+            <li><a href="footer_menu-link">Статус системы</a></li>
+            </ul>
+          </div>
+          <div class="footer_menu1">
+            <h3 class="footer_title">Участвуйте</h3>
+            <ul>
+            <li><a href="footer_menu-link">Писание об участии</a></li>
+            <li><a href="footer_menu-link">Сторонние приложения</a></li>
+            <li><a href="footer_menu-link">Добавить новый фильм</a></li>
+            <li><a href="footer_menu-link">Добавить новый сериал</a></li>
+            </ul>
+          </div>
+          <div class="footer_menu3">
+            <h3 class="footer_title">Сообщество</h3>
+            <ul>
+            <li><a href="footer_menu-link">Руководства</a></li>
+            <li><a href="footer_menu-link">Обсуждения</a></li>
+            <li><a href="footer_menu-link">Доска почёта</a></li>
+            <li><a href="footer_menu-link">Twitter</a></li>
+            </ul>
+          </div>
+          <div class="footer_menu4">
+            <h3 class="footer_title">О праве</h3>
+            <ul>
+            <li><a href="footer_menu-link">Условия использования</a></li>
+            <li><a href="footer_menu-link">API Правила использования</a></li>
+            <li><a href="footer_menu-link">Политика конфиденциальности</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="loading-bar.min.js"></script>
+  <script src="main.js"></script>
+  
+</body>
+</html>
